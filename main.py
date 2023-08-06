@@ -1,3 +1,4 @@
+import torch
 def main():
     # Open the input file
     with open('input.txt', 'r', encoding='utf-8') as f:
@@ -23,3 +24,5 @@ def main():
 
     # decoder function
     decode = lambda intlist: [intToString[i] for i in intlist]
+
+    # encode all text and wrap it into a tensor
